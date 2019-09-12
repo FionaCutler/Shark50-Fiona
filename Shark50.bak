@@ -1455,10 +1455,7 @@ $EndComp
 Wire Wire Line
 	8900 4700 8900 4350
 Wire Wire Line
-	8450 6300 8450 5250
-Wire Wire Line
 	8550 5250 8450 5250
-Connection ~ 8450 5250
 $Comp
 L acheronSymbols:MXSwitch SW?
 U 1 1 5D92AC14
@@ -1484,10 +1481,7 @@ $EndComp
 Wire Wire Line
 	9950 4700 9950 4350
 Wire Wire Line
-	9500 6300 9500 5250
-Wire Wire Line
 	9600 5250 9500 5250
-Connection ~ 9500 5250
 $Comp
 L acheronSymbols:MXSwitch SW?
 U 1 1 5D92AC24
@@ -1540,10 +1534,7 @@ $EndComp
 Wire Wire Line
 	11850 4700 11850 4350
 Wire Wire Line
-	11400 6300 11400 5250
-Wire Wire Line
 	11500 5250 11400 5250
-Connection ~ 11400 5250
 $Comp
 L acheronSymbols:MXSwitch SW?
 U 1 1 5D92AC44
@@ -1569,10 +1560,7 @@ $EndComp
 Wire Wire Line
 	12800 4700 12800 4350
 Wire Wire Line
-	12350 6300 12350 5250
-Wire Wire Line
 	12450 5250 12350 5250
-Connection ~ 12350 5250
 $Comp
 L acheronSymbols:MXSwitch SW?
 U 1 1 5D92AC54
@@ -1598,10 +1586,7 @@ $EndComp
 Wire Wire Line
 	13800 4700 13800 4350
 Wire Wire Line
-	13350 6300 13350 5250
-Wire Wire Line
 	13450 5250 13350 5250
-Connection ~ 13350 5250
 $Comp
 L acheronSymbols:MXSwitch SW?
 U 1 1 5D92AC64
@@ -1627,10 +1612,7 @@ $EndComp
 Wire Wire Line
 	14800 4700 14800 4350
 Wire Wire Line
-	14350 6300 14350 5250
-Wire Wire Line
 	14450 5250 14350 5250
-Connection ~ 14350 5250
 $Comp
 L acheronSymbols:MXSwitch SW?
 U 1 1 5D92AC74
@@ -1683,10 +1665,7 @@ $EndComp
 Wire Wire Line
 	16700 4700 16700 4350
 Wire Wire Line
-	16250 6300 16250 5250
-Wire Wire Line
 	16350 5250 16250 5250
-Connection ~ 16250 5250
 $Comp
 L acheronSymbols:MXSwitch SW?
 U 1 1 5D92AC94
@@ -1750,9 +1729,6 @@ Wire Wire Line
 	16700 4350 17600 4350
 Connection ~ 5400 5250
 Wire Wire Line
-	6450 5250 6450 6200
-Connection ~ 6450 5250
-Wire Wire Line
 	6450 3650 6450 5250
 Wire Wire Line
 	5400 3650 5400 5250
@@ -1811,7 +1787,7 @@ L acheronSymbols:MXSwitch SW?
 U 1 1 5D9799B4
 P 7950 6700
 F 0 "SW?" H 7900 6800 50  0000 L CNN
-F 1 "LShift" H 7950 6700 79  0000 C CNN
+F 1 "LAlt" H 7950 6700 79  0000 C CNN
 F 2 "acheron_MX:MX100" H 7950 6700 50  0001 C CNN
 F 3 "" H 7950 6700 50  0001 C CNN
 	1    7950 6700
@@ -1835,7 +1811,7 @@ L acheronSymbols:MXSwitch SW?
 U 1 1 5D9867DE
 P 10850 6700
 F 0 "SW?" H 10800 6800 50  0000 L CNN
-F 1 "LShift" H 10850 6700 79  0000 C CNN
+F 1 "Spc" H 10850 6700 79  0000 C CNN
 F 2 "acheron_MX:MX100" H 10850 6700 50  0001 C CNN
 F 3 "" H 10850 6700 50  0001 C CNN
 	1    10850 6700
@@ -1859,7 +1835,7 @@ L acheronSymbols:MXSwitch SW?
 U 1 1 5D995B7C
 P 15750 6700
 F 0 "SW?" H 15700 6800 50  0000 L CNN
-F 1 "LShift" H 15750 6700 79  0000 C CNN
+F 1 "RAlt" H 15750 6700 79  0000 C CNN
 F 2 "acheron_MX:MX100" H 15750 6700 50  0001 C CNN
 F 3 "" H 15750 6700 50  0001 C CNN
 	1    15750 6700
@@ -1891,7 +1867,7 @@ L acheronSymbols:MXSwitch SW?
 U 1 1 5D9CC75E
 P 17600 6700
 F 0 "SW?" H 17550 6800 50  0000 L CNN
-F 1 "LShift" H 17600 6700 79  0000 C CNN
+F 1 "RCtrl" H 17600 6700 79  0000 C CNN
 F 2 "acheron_MX:MX100" H 17600 6700 50  0001 C CNN
 F 3 "" H 17600 6700 50  0001 C CNN
 	1    17600 6700

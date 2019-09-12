@@ -1896,9 +1896,6 @@ Connection ~ 17150 5250
 Wire Wire Line
 	17150 5250 17150 6700
 Wire Wire Line
-	4800 5800 5850 5800
-Connection ~ 5850 5800
-Wire Wire Line
 	5850 5800 7950 5800
 Connection ~ 7950 5800
 Wire Wire Line
@@ -1909,4 +1906,9 @@ Wire Wire Line
 Connection ~ 15750 5800
 Wire Wire Line
 	15750 5800 17600 5800
+Wire Wire Line
+	5850 5800 5100 5800
+Connection ~ 5850 5800
+Text GLabel 5100 5800 0    50   Input ~ 0
+Row4
 $EndSCHEMATC
