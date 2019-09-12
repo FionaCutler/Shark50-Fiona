@@ -1,0 +1,988 @@
+EESchema Schematic File Version 4
+LIBS:Shark50-cache
+EELAYER 29 0
+EELAYER END
+$Descr A0 46811 33110
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR09
+U 1 1 5D8195A8
+P 1550 4450
+F 0 "#PWR09" H 1550 4300 50  0001 C CNN
+F 1 "+5V" H 1565 4623 50  0000 C CNN
+F 2 "" H 1550 4450 50  0001 C CNN
+F 3 "" H 1550 4450 50  0001 C CNN
+	1    1550 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4450 1550 4500
+Wire Wire Line
+	1550 4950 1550 5100
+$Comp
+L power:GND #PWR010
+U 1 1 5D81BE8C
+P 1550 5100
+F 0 "#PWR010" H 1550 4850 50  0001 C CNN
+F 1 "GND" H 1555 4927 50  0000 C CNN
+F 2 "" H 1550 5100 50  0001 C CNN
+F 3 "" H 1550 5100 50  0001 C CNN
+	1    1550 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5D81249C
+P 2100 4700
+F 0 "C8" V 2300 4650 50  0000 L CNN
+F 1 "100n" V 2200 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2100 4700 50  0001 C CNN
+F 3 "~" H 2100 4700 50  0001 C CNN
+	1    2100 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4600 2100 4500
+Wire Wire Line
+	1700 4500 2100 4500
+Wire Wire Line
+	1700 4600 1700 4500
+$Comp
+L Device:C_Small C7
+U 1 1 5D811357
+P 1700 4700
+F 0 "C7" V 1900 4650 50  0000 L CNN
+F 1 "100n" V 1800 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1700 4700 50  0001 C CNN
+F 3 "~" H 1700 4700 50  0001 C CNN
+	1    1700 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4500 1700 4500
+Connection ~ 1700 4500
+Wire Wire Line
+	1550 4950 1700 4950
+Wire Wire Line
+	1700 4950 1700 4800
+Connection ~ 1700 4950
+Wire Wire Line
+	1700 4950 2100 4950
+Wire Wire Line
+	2100 4950 2100 4800
+$Comp
+L acheronSymbols:MXSwitch SW1
+U 1 1 5D7975E0
+P 5850 2100
+F 0 "SW1" H 5800 2200 50  0000 L CNN
+F 1 "Esc" H 5850 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 5850 2100 50  0001 C CNN
+F 3 "" H 5850 2100 50  0001 C CNN
+	1    5850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D1
+U 1 1 5D7A1FD9
+P 5850 1650
+F 0 "D1" V 5804 1718 50  0000 L CNN
+F 1 "1N4148W" V 5895 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 5850 1650 50  0001 C CNN
+F 3 "~" V 5850 1650 50  0001 C CNN
+	1    5850 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW2
+U 1 1 5D7A646F
+P 6900 2100
+F 0 "SW2" H 6850 2200 50  0000 L CNN
+F 1 "Q" H 6900 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 6900 2100 50  0001 C CNN
+F 3 "" H 6900 2100 50  0001 C CNN
+	1    6900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D2
+U 1 1 5D7A6475
+P 6900 1650
+F 0 "D2" V 6854 1718 50  0000 L CNN
+F 1 "1N4148W" V 6945 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 6900 1650 50  0001 C CNN
+F 3 "~" V 6900 1650 50  0001 C CNN
+	1    6900 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 1550 6900 1200
+Wire Wire Line
+	5850 1200 5850 1550
+Wire Wire Line
+	5100 1200 5850 1200
+Connection ~ 5850 1200
+Wire Wire Line
+	5500 2100 5400 2100
+Wire Wire Line
+	5400 2100 5400 700 
+Wire Wire Line
+	6550 2100 6450 2100
+Wire Wire Line
+	6450 2100 6450 700 
+Text GLabel 5100 1200 0    50   Input ~ 0
+Row1
+Text GLabel 5400 700  0    50   Input ~ 0
+Col1
+Text GLabel 6450 700  0    50   Input ~ 0
+Col2
+Connection ~ 1550 4950
+Connection ~ 1550 4500
+$Comp
+L Device:R_Small R5
+U 1 1 5D7AD962
+P 900 1900
+F 0 "R5" H 959 1946 50  0000 L CNN
+F 1 "R_Small" H 959 1855 50  0000 L CNN
+F 2 "" H 900 1900 50  0001 C CNN
+F 3 "~" H 900 1900 50  0001 C CNN
+	1    900  1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1750 900  1800
+Connection ~ 900  1750
+Wire Wire Line
+	900  1450 900  1750
+Wire Wire Line
+	1300 1400 1300 1750
+Wire Wire Line
+	900  1750 1300 1750
+Wire Wire Line
+	900  1050 1300 1050
+Wire Wire Line
+	2750 3000 1950 3000
+Wire Wire Line
+	1950 2900 2750 2900
+Wire Wire Line
+	1600 3000 1750 3000
+Wire Wire Line
+	1600 2900 1750 2900
+$Comp
+L Device:R_Small R2
+U 1 1 5D793E0F
+P 1850 3000
+F 0 "R2" V 1654 3000 50  0000 C CNN
+F 1 "22R" V 1745 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1850 3000 50  0001 C CNN
+F 3 "~" H 1850 3000 50  0001 C CNN
+	1    1850 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5D7923C1
+P 1850 2900
+F 0 "R1" V 1654 2900 50  0000 C CNN
+F 1 "22R" V 1745 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1850 2900 50  0001 C CNN
+F 3 "~" H 1850 2900 50  0001 C CNN
+	1    1850 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 3400 1300 3300
+$Comp
+L power:GND #PWR01
+U 1 1 5D78F208
+P 1300 3400
+F 0 "#PWR01" H 1300 3150 50  0001 C CNN
+F 1 "GND" V 1305 3272 50  0000 R CNN
+F 2 "" H 1300 3400 50  0001 C CNN
+F 3 "" H 1300 3400 50  0001 C CNN
+	1    1300 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2700 1700 2700
+$Comp
+L power:+5V #PWR02
+U 1 1 5D78B3B0
+P 1700 2700
+F 0 "#PWR02" H 1700 2550 50  0001 C CNN
+F 1 "+5V" H 1715 2873 50  0000 C CNN
+F 2 "" H 1700 2700 50  0001 C CNN
+F 3 "" H 1700 2700 50  0001 C CNN
+	1    1700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Mini J1
+U 1 1 5D83A59F
+P 1300 2900
+F 0 "J1" H 1357 3367 50  0000 C CNN
+F 1 "USB_B_Mini" H 1357 3276 50  0000 C CNN
+F 2 "acheron_Connectors:USB_MiniB_XM7D-0512" H 1450 2850 50  0001 C CNN
+F 3 "~" H 1450 2850 50  0001 C CNN
+	1    1300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4950 1550 4950
+Connection ~ 1300 4950
+Wire Wire Line
+	1300 4950 1300 4800
+Wire Wire Line
+	900  4950 900  4800
+Wire Wire Line
+	900  4950 1300 4950
+Wire Wire Line
+	1300 4500 1550 4500
+$Comp
+L Device:C_Small C5
+U 1 1 5D80C6F4
+P 900 4700
+F 0 "C5" V 1100 4650 50  0000 L CNN
+F 1 "10u" V 1000 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 900 4700 50  0001 C CNN
+F 3 "~" H 900 4700 50  0001 C CNN
+	1    900  4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  4600 900  4500
+Wire Wire Line
+	900  4500 1300 4500
+Connection ~ 1300 4500
+Wire Wire Line
+	1300 4600 1300 4500
+$Comp
+L Device:C_Small C6
+U 1 1 5D8106C8
+P 1300 4700
+F 0 "C6" V 1500 4650 50  0000 L CNN
+F 1 "1u" V 1400 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1300 4700 50  0001 C CNN
+F 3 "~" H 1300 4700 50  0001 C CNN
+	1    1300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 5D77FC9C
+P 3350 3400
+F 0 "U1" H 3300 2500 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 3300 2400 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3350 3400 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3350 3400 50  0001 C CNN
+	1    3350 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3200 2750 3200
+Wire Wire Line
+	3950 4000 4150 4000
+$Comp
+L power:GND #PWR0102
+U 1 1 5D78D83C
+P 3300 5300
+F 0 "#PWR0102" H 3300 5050 50  0001 C CNN
+F 1 "GND" H 3305 5127 50  0000 C CNN
+F 2 "" H 3300 5300 50  0001 C CNN
+F 3 "" H 3300 5300 50  0001 C CNN
+	1    3300 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5300 3300 5300
+Wire Wire Line
+	3350 5300 3300 5300
+Connection ~ 3300 5300
+Wire Wire Line
+	1300 1050 1300 1200
+Wire Wire Line
+	2450 2300 2750 2300
+Wire Wire Line
+	2450 2100 2750 2100
+Text GLabel 2750 1900 0    50   Input ~ 0
+RST
+Wire Wire Line
+	1300 1050 1600 1050
+Text GLabel 1600 1050 2    50   Output ~ 0
+RST
+Wire Wire Line
+	3250 1350 3250 1600
+Wire Wire Line
+	3350 1350 3350 1600
+Wire Wire Line
+	3450 1350 3450 1600
+Wire Wire Line
+	3250 5200 3250 5300
+Wire Wire Line
+	3350 5200 3350 5300
+Connection ~ 1300 1050
+Wire Wire Line
+	1300 1000 1300 1050
+Wire Wire Line
+	1300 750  1300 800 
+$Comp
+L power:GND #PWR03
+U 1 1 5D7CE2BB
+P 900 2000
+F 0 "#PWR03" H 900 1750 50  0001 C CNN
+F 1 "GND" V 905 1872 50  0000 R CNN
+F 2 "" H 900 2000 50  0001 C CNN
+F 3 "" H 900 2000 50  0001 C CNN
+	1    900  2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5D7D093A
+P 1300 900
+F 0 "R3" H 1359 946 50  0000 L CNN
+F 1 "10k" H 1359 855 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1300 900 50  0001 C CNN
+F 3 "~" H 1300 900 50  0001 C CNN
+	1    1300 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SWP1
+U 1 1 5D7D36C0
+P 900 1250
+F 0 "SWP1" V 950 1550 50  0000 R CNN
+F 1 "SW_Push" V 850 1650 50  0000 R CNN
+F 2 "acheron_Hardware:smdPushBtn" H 900 1450 50  0001 C CNN
+F 3 "~" H 900 1450 50  0001 C CNN
+	1    900  1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5D7CE2C1
+P 1300 1300
+F 0 "C4" H 1100 1400 50  0000 C CNN
+F 1 "100nF" H 1100 1300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1300 1300 50  0001 C CNN
+F 3 "~" H 1300 1300 50  0001 C CNN
+	1    1300 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5D7CAB94
+P 1300 750
+F 0 "#PWR06" H 1300 600 50  0001 C CNN
+F 1 "+5V" H 1315 923 50  0000 C CNN
+F 2 "" H 1300 750 50  0001 C CNN
+F 3 "" H 1300 750 50  0001 C CNN
+	1    1300 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4000 4500 4000
+$Comp
+L Device:R_Small R4
+U 1 1 5D7C5248
+P 4250 4000
+F 0 "R4" V 4054 4000 50  0000 C CNN
+F 1 "1k" V 4145 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4250 4000 50  0001 C CNN
+F 3 "~" H 4250 4000 50  0001 C CNN
+	1    4250 4000
+	0    1    1    0   
+$EndComp
+Connection ~ 2450 2300
+Wire Wire Line
+	2150 2300 2450 2300
+Wire Wire Line
+	1800 2300 1950 2300
+Wire Wire Line
+	1950 2100 1800 2100
+Connection ~ 2450 2100
+Wire Wire Line
+	2150 2100 2450 2100
+$Comp
+L Device:C_Small C3
+U 1 1 5D7C218D
+P 2050 2300
+F 0 "C3" V 2300 2300 50  0000 C CNN
+F 1 "22pF" V 2200 2300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2050 2300 50  0001 C CNN
+F 3 "~" H 2050 2300 50  0001 C CNN
+	1    2050 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5D7C2187
+P 1800 2300
+F 0 "#PWR05" H 1800 2050 50  0001 C CNN
+F 1 "GND" V 1805 2172 50  0000 R CNN
+F 2 "" H 1800 2300 50  0001 C CNN
+F 3 "" H 1800 2300 50  0001 C CNN
+	1    1800 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5D7B8D06
+P 2050 2100
+F 0 "C2" V 1800 2100 50  0000 C CNN
+F 1 "22pF" V 1900 2100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2050 2100 50  0001 C CNN
+F 3 "~" H 2050 2100 50  0001 C CNN
+	1    2050 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5D7B5864
+P 1800 2100
+F 0 "#PWR04" H 1800 1850 50  0001 C CNN
+F 1 "GND" V 1805 1972 50  0000 R CNN
+F 2 "" H 1800 2100 50  0001 C CNN
+F 3 "" H 1800 2100 50  0001 C CNN
+	1    1800 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal_Small Y1
+U 1 1 5D7AFF30
+P 2450 2200
+F 0 "Y1" V 2200 2150 50  0000 L CNN
+F 1 "16Mhz" V 2300 2100 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering" H 2450 2200 50  0001 C CNN
+F 3 "~" H 2450 2200 50  0001 C CNN
+	1    2450 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 5D7A67AB
+P 2750 2700
+F 0 "#PWR07" H 2750 2550 50  0001 C CNN
+F 1 "+5V" V 2765 2828 50  0000 L CNN
+F 2 "" H 2750 2700 50  0001 C CNN
+F 3 "" H 2750 2700 50  0001 C CNN
+	1    2750 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 3200 2400 3200
+$Comp
+L power:GND #PWR0103
+U 1 1 5D7A0F99
+P 2300 3200
+F 0 "#PWR0103" H 2300 2950 50  0001 C CNN
+F 1 "GND" V 2305 3072 50  0000 R CNN
+F 2 "" H 2300 3200 50  0001 C CNN
+F 3 "" H 2300 3200 50  0001 C CNN
+	1    2300 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5D791EF4
+P 2500 3200
+F 0 "C1" V 2700 3150 50  0000 L CNN
+F 1 "1u" V 2600 3150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2500 3200 50  0001 C CNN
+F 3 "~" H 2500 3200 50  0001 C CNN
+	1    2500 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 1350 3350 1350
+Connection ~ 3350 1350
+Wire Wire Line
+	3250 1350 3350 1350
+$Comp
+L power:+5V #PWR0101
+U 1 1 5D78B93B
+P 3350 1350
+F 0 "#PWR0101" H 3350 1200 50  0001 C CNN
+F 1 "+5V" H 3365 1523 50  0000 C CNN
+F 2 "" H 3350 1350 50  0001 C CNN
+F 3 "" H 3350 1350 50  0001 C CNN
+	1    3350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW3
+U 1 1 5D81E597
+P 7950 2100
+F 0 "SW3" H 7900 2200 50  0000 L CNN
+F 1 "W" H 7950 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 7950 2100 50  0001 C CNN
+F 3 "" H 7950 2100 50  0001 C CNN
+	1    7950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D4
+U 1 1 5D81E59D
+P 7950 1650
+F 0 "D4" V 7904 1718 50  0000 L CNN
+F 1 "1N4148W" V 7995 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 7950 1650 50  0001 C CNN
+F 3 "~" V 7950 1650 50  0001 C CNN
+	1    7950 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 1550 7950 1200
+Wire Wire Line
+	7500 3150 7500 2100
+Wire Wire Line
+	7600 2100 7500 2100
+Connection ~ 7500 2100
+Wire Wire Line
+	7500 2100 7500 700 
+Text GLabel 7500 700  0    50   Input ~ 0
+Col3
+$Comp
+L acheronSymbols:MXSwitch SW4
+U 1 1 5D8204E5
+P 8900 2100
+F 0 "SW4" H 8850 2200 50  0000 L CNN
+F 1 "E" H 8900 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 8900 2100 50  0001 C CNN
+F 3 "" H 8900 2100 50  0001 C CNN
+	1    8900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D5
+U 1 1 5D8204EB
+P 8900 1650
+F 0 "D5" V 8854 1718 50  0000 L CNN
+F 1 "1N4148W" V 8945 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 8900 1650 50  0001 C CNN
+F 3 "~" V 8900 1650 50  0001 C CNN
+	1    8900 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 1550 8900 1200
+Wire Wire Line
+	8450 3150 8450 2100
+Wire Wire Line
+	8550 2100 8450 2100
+Connection ~ 8450 2100
+Wire Wire Line
+	8450 2100 8450 700 
+Text GLabel 8450 700  0    50   Input ~ 0
+Col4
+$Comp
+L acheronSymbols:MXSwitch SW5
+U 1 1 5D824F7A
+P 9950 2100
+F 0 "SW5" H 9900 2200 50  0000 L CNN
+F 1 "R" H 9950 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 9950 2100 50  0001 C CNN
+F 3 "" H 9950 2100 50  0001 C CNN
+	1    9950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D6
+U 1 1 5D824F80
+P 9950 1650
+F 0 "D6" V 9904 1718 50  0000 L CNN
+F 1 "1N4148W" V 9995 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 9950 1650 50  0001 C CNN
+F 3 "~" V 9950 1650 50  0001 C CNN
+	1    9950 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9950 1550 9950 1200
+Wire Wire Line
+	9500 3150 9500 2100
+Wire Wire Line
+	9600 2100 9500 2100
+Connection ~ 9500 2100
+Wire Wire Line
+	9500 2100 9500 700 
+Text GLabel 9500 700  0    50   Input ~ 0
+Col5
+$Comp
+L acheronSymbols:MXSwitch SW6
+U 1 1 5D828406
+P 10900 2100
+F 0 "SW6" H 10850 2200 50  0000 L CNN
+F 1 "T" H 10900 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 10900 2100 50  0001 C CNN
+F 3 "" H 10900 2100 50  0001 C CNN
+	1    10900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D7
+U 1 1 5D82840C
+P 10900 1650
+F 0 "D7" V 10854 1718 50  0000 L CNN
+F 1 "1N4148W" V 10945 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 10900 1650 50  0001 C CNN
+F 3 "~" V 10900 1650 50  0001 C CNN
+	1    10900 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10900 1550 10900 1200
+Wire Wire Line
+	10450 3150 10450 2100
+Wire Wire Line
+	10550 2100 10450 2100
+Connection ~ 10450 2100
+Wire Wire Line
+	10450 2100 10450 700 
+Text GLabel 10450 700  0    50   Input ~ 0
+Col6
+$Comp
+L acheronSymbols:MXSwitch SW7
+U 1 1 5D82AE94
+P 11850 2100
+F 0 "SW7" H 11800 2200 50  0000 L CNN
+F 1 "Y" H 11850 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 11850 2100 50  0001 C CNN
+F 3 "" H 11850 2100 50  0001 C CNN
+	1    11850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D8
+U 1 1 5D82AE9A
+P 11850 1650
+F 0 "D8" V 11804 1718 50  0000 L CNN
+F 1 "1N4148W" V 11895 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 11850 1650 50  0001 C CNN
+F 3 "~" V 11850 1650 50  0001 C CNN
+	1    11850 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11850 1550 11850 1200
+Wire Wire Line
+	11400 3150 11400 2100
+Wire Wire Line
+	11500 2100 11400 2100
+Connection ~ 11400 2100
+Wire Wire Line
+	11400 2100 11400 700 
+Text GLabel 11400 700  0    50   Input ~ 0
+Col7
+$Comp
+L acheronSymbols:MXSwitch SW8
+U 1 1 5D82E472
+P 12800 2100
+F 0 "SW8" H 12750 2200 50  0000 L CNN
+F 1 "U" H 12800 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 12800 2100 50  0001 C CNN
+F 3 "" H 12800 2100 50  0001 C CNN
+	1    12800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D9
+U 1 1 5D82E478
+P 12800 1650
+F 0 "D9" V 12754 1718 50  0000 L CNN
+F 1 "1N4148W" V 12845 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 12800 1650 50  0001 C CNN
+F 3 "~" V 12800 1650 50  0001 C CNN
+	1    12800 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12800 1550 12800 1200
+Wire Wire Line
+	12350 3150 12350 2100
+Wire Wire Line
+	12450 2100 12350 2100
+Connection ~ 12350 2100
+Wire Wire Line
+	12350 2100 12350 700 
+Text GLabel 12350 700  0    50   Input ~ 0
+Col8
+$Comp
+L acheronSymbols:MXSwitch SW9
+U 1 1 5D83134F
+P 13800 2100
+F 0 "SW9" H 13750 2200 50  0000 L CNN
+F 1 "I" H 13800 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 13800 2100 50  0001 C CNN
+F 3 "" H 13800 2100 50  0001 C CNN
+	1    13800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D10
+U 1 1 5D831355
+P 13800 1650
+F 0 "D10" V 13754 1718 50  0000 L CNN
+F 1 "1N4148W" V 13845 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 13800 1650 50  0001 C CNN
+F 3 "~" V 13800 1650 50  0001 C CNN
+	1    13800 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13800 1550 13800 1200
+Wire Wire Line
+	13350 3150 13350 2100
+Wire Wire Line
+	13450 2100 13350 2100
+Connection ~ 13350 2100
+Wire Wire Line
+	13350 2100 13350 700 
+Text GLabel 13350 700  0    50   Input ~ 0
+Col9
+$Comp
+L acheronSymbols:MXSwitch SW10
+U 1 1 5D837D62
+P 14800 2100
+F 0 "SW10" H 14700 2200 50  0000 L CNN
+F 1 "O" H 14800 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 14800 2100 50  0001 C CNN
+F 3 "" H 14800 2100 50  0001 C CNN
+	1    14800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D11
+U 1 1 5D837D68
+P 14800 1650
+F 0 "D11" V 14754 1718 50  0000 L CNN
+F 1 "1N4148W" V 14845 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 14800 1650 50  0001 C CNN
+F 3 "~" V 14800 1650 50  0001 C CNN
+	1    14800 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14800 1550 14800 1200
+Wire Wire Line
+	14350 3150 14350 2100
+Wire Wire Line
+	14450 2100 14350 2100
+Connection ~ 14350 2100
+Wire Wire Line
+	14350 2100 14350 700 
+Text GLabel 14350 700  0    50   Input ~ 0
+Col10
+$Comp
+L acheronSymbols:MXSwitch SW11
+U 1 1 5D83DBD7
+P 15750 2100
+F 0 "SW11" H 15650 2200 50  0000 L CNN
+F 1 "P" H 15750 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 15750 2100 50  0001 C CNN
+F 3 "" H 15750 2100 50  0001 C CNN
+	1    15750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D12
+U 1 1 5D83DBDD
+P 15750 1650
+F 0 "D12" V 15704 1718 50  0000 L CNN
+F 1 "1N4148W" V 15795 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 15750 1650 50  0001 C CNN
+F 3 "~" V 15750 1650 50  0001 C CNN
+	1    15750 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15750 1550 15750 1200
+Wire Wire Line
+	15300 3150 15300 2100
+Wire Wire Line
+	15400 2100 15300 2100
+Connection ~ 15300 2100
+Wire Wire Line
+	15300 2100 15300 700 
+Text GLabel 15300 700  0    50   Input ~ 0
+Col11
+$Comp
+L acheronSymbols:MXSwitch SW12
+U 1 1 5D840AEB
+P 16700 2100
+F 0 "SW12" H 16600 2200 50  0000 L CNN
+F 1 "[" H 16700 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 16700 2100 50  0001 C CNN
+F 3 "" H 16700 2100 50  0001 C CNN
+	1    16700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D13
+U 1 1 5D840AF1
+P 16700 1650
+F 0 "D13" V 16654 1718 50  0000 L CNN
+F 1 "1N4148W" V 16745 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 16700 1650 50  0001 C CNN
+F 3 "~" V 16700 1650 50  0001 C CNN
+	1    16700 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	16700 1550 16700 1200
+Wire Wire Line
+	16250 3150 16250 2100
+Wire Wire Line
+	16350 2100 16250 2100
+Connection ~ 16250 2100
+Wire Wire Line
+	16250 2100 16250 700 
+Text GLabel 16250 700  0    50   Input ~ 0
+Col12
+$Comp
+L acheronSymbols:MXSwitch SW13
+U 1 1 5D8445B4
+P 17600 2100
+F 0 "SW13" H 17500 2200 50  0000 L CNN
+F 1 "]" H 17600 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 17600 2100 50  0001 C CNN
+F 3 "" H 17600 2100 50  0001 C CNN
+	1    17600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D14
+U 1 1 5D8445BA
+P 17600 1650
+F 0 "D14" V 17554 1718 50  0000 L CNN
+F 1 "1N4148W" V 17645 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 17600 1650 50  0001 C CNN
+F 3 "~" V 17600 1650 50  0001 C CNN
+	1    17600 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17600 1550 17600 1200
+Wire Wire Line
+	17150 3150 17150 2100
+Wire Wire Line
+	17250 2100 17150 2100
+Connection ~ 17150 2100
+Wire Wire Line
+	17150 2100 17150 700 
+Text GLabel 17150 700  0    50   Input ~ 0
+Col13
+$Comp
+L acheronSymbols:MXSwitch SW14
+U 1 1 5D847D2E
+P 18600 2100
+F 0 "SW14" H 18500 2200 50  0000 L CNN
+F 1 "BS" H 18600 2100 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 18600 2100 50  0001 C CNN
+F 3 "" H 18600 2100 50  0001 C CNN
+	1    18600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D15
+U 1 1 5D847D34
+P 18600 1650
+F 0 "D15" V 18554 1718 50  0000 L CNN
+F 1 "1N4148W" V 18645 1718 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 18600 1650 50  0001 C CNN
+F 3 "~" V 18600 1650 50  0001 C CNN
+	1    18600 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18600 1550 18600 1200
+Wire Wire Line
+	18150 3150 18150 2100
+Wire Wire Line
+	18250 2100 18150 2100
+Connection ~ 18150 2100
+Wire Wire Line
+	18150 2100 18150 700 
+Text GLabel 18150 700  0    50   Input ~ 0
+Col14
+Wire Wire Line
+	5850 1200 6900 1200
+Wire Wire Line
+	5400 2100 5400 3150
+Connection ~ 5400 2100
+Wire Wire Line
+	6450 2100 6450 3100
+Connection ~ 6450 2100
+Connection ~ 6900 1200
+Wire Wire Line
+	6900 1200 7950 1200
+Connection ~ 7950 1200
+Wire Wire Line
+	7950 1200 8900 1200
+Connection ~ 8900 1200
+Wire Wire Line
+	8900 1200 9950 1200
+Connection ~ 9950 1200
+Wire Wire Line
+	9950 1200 10900 1200
+Connection ~ 10900 1200
+Wire Wire Line
+	10900 1200 11850 1200
+Connection ~ 11850 1200
+Wire Wire Line
+	11850 1200 12800 1200
+Connection ~ 12800 1200
+Wire Wire Line
+	12800 1200 13800 1200
+Connection ~ 13800 1200
+Wire Wire Line
+	13800 1200 14800 1200
+Connection ~ 14800 1200
+Wire Wire Line
+	14800 1200 15750 1200
+Connection ~ 15750 1200
+Wire Wire Line
+	15750 1200 16700 1200
+Connection ~ 16700 1200
+Wire Wire Line
+	16700 1200 17600 1200
+Connection ~ 17600 1200
+Wire Wire Line
+	17600 1200 18600 1200
+Connection ~ 18600 1200
+Wire Wire Line
+	18600 1200 18750 1200
+$Comp
+L acheronSymbols:MXSwitch SW15
+U 1 1 5D867C59
+P 5850 3150
+F 0 "SW15" H 5800 3250 50  0000 L CNN
+F 1 "Esc" H 5850 3150 79  0000 C CNN
+F 2 "acheron_MX:MX100" H 5850 3150 50  0001 C CNN
+F 3 "" H 5850 3150 50  0001 C CNN
+	1    5850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D15
+U 1 1 5D867C5F
+P 5850 2700
+F 0 "D15" V 5804 2768 50  0000 L CNN
+F 1 "1N4148W" V 5895 2768 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 5850 2700 50  0001 C CNN
+F 3 "~" V 5850 2700 50  0001 C CNN
+	1    5850 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 3150 5400 3150
+$EndSCHEMATC
